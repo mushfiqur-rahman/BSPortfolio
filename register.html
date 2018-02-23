@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="img/icon.png"  type="image/png">
+        <title>Bootstrap || Portfolio</title>
+
+        <link rel="stylesheet" href="asset/css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="asset/css/font-awesome.min.css" media="all">
+        <link rel="stylesheet" href="asset/css/footer.css" media="all">
+
+    </head>
+    <body>
+	<!--[if it IE 8]>
+		<p class="browserupgrade"> You are using an <strong>outdated</strong> browser.Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		to improve your experience.</p>
+		<![endif]-->
+	<!---Start Header Area---->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container ">
+            <button type="button"  class="navbar-toggler" style=" border: 1px solid black;" data-toggle="collapse" data-target="#myMenu">Menu
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <Ul class="navbar-nav mr-auto">
+                    <li class="nav-item" id="active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >MY Work</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a href="research.html" class="nav-link">Research Work</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Project</a>
+                            <div class="dropdown-menu bg-dark">
+                                <a class="dropdown-item" href="project1.html">project1</a>
+                                <a class="dropdown-item" href="project2.html" >Project2</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                </Ul>
+                <form class="form-inline ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav navbar-right ml-auto">
+                    <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#myModallogin" >Login</a></li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+		
+<!----End Header Area----->
+	<!-- form section-->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12" style="height:auto; border: 1px solid">
+				<h1>Registration Form</h1>
+			</div>
+			<div class="col-sm-12" style="height:auto; border: 1px solid">
+				<br/>
+				<form action="" method="post">
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="firstName1">Full Name</label>
+						<div class="col-sm-9">
+							<input type="text" name="first_name" id="firstName1" class="form-control" placeholder="Enter Full Name"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="email1">Email Address</label>
+						<div class="col-sm-9">
+							<input type="email" name="email" id="email1" class="form-control" placeholder="Enter Email"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="password1">Password</label>
+						<div class="col-sm-9">
+							<input type="password" name="password" id="password1" class="form-control" placeholder="Enter Password"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="phone">Phone Number</label>
+						<div class="col-sm-9">
+							<input type="tel" name="phone_number" id="phone" class="form-control" placeholder="Enter phone number"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="date_of_birth1">Date of Birth</label>
+						<div class="col-sm-9">
+							<input type="date" name="date_of_birth" id="date_of_birth1" class="form-control"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3">Gander</label>
+						<div class="col-sm-9">
+							<label><input type="radio" name="gender" value="male">Male</label>
+							<label><input type="radio" name="gender" value="female">FeMale</label>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="address1">Address</label>
+						<div class="col-sm-9">
+							<textarea name="address" id="address1" class="form-control" rows="5"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="district1">District Name </label>
+						<div class="col-sm-9">
+							<select name="district_name" id="district1" class="form-control">
+								<option value="" selected="selected">Select District</option>
+								<option value="30">Bagerhat</option>
+								<option value="19">Bandarban</option>
+								<option value="43">Barisal</option>
+								<option value="45">Bhola</option>
+								<option value="49">Bogra</option>
+								<option value="44">Borguna</option>
+								<option value="20">Brahmanbaria</option>
+								<option value="50">Chaainawabganj</option>
+								<option value="21">Chandpur</option>
+								<option value="18">Chittagong</option>
+								<option value="31">Chuadanga</option>
+								<option value="22">Comilla</option>
+								<option value="23">Cox'sBazar</option>
+								<option value="1">Dhaka</option>
+								<option value="58">Dinajpur</option>
+								<option value="2">Faridpur</option>
+								<option value="24">Feni</option>
+								<option value="59">Gaibandha</option>
+								<option value="3">Gazipur</option>
+								<option value="4">Gopalganj</option>
+								<option value="40">Habiganj</option>
+								<option value="5">Jamalpur</option>
+								<option value="32">Jessore</option>
+								<option value="46">Jhalkati</option>
+								<option value="33">Jhenaidah</option>
+								<option value="51">Joypurhat</option>
+								<option value="25">Khagrachari</option>
+								<option value="29">Khulna</option>
+								<option value="6">Kishoreganj</option>
+								<option value="60">Kurigram</option>
+								<option value="34">Kushtia</option>
+								<option value="26">Lakshmipur</option>
+								<option value="61">Lalmonirhat</option>
+								<option value="7">Madaripur</option>
+								<option value="35">Magura</option>
+								<option value="8">Manikganj</option>
+								<option value="41">Maulivibazar</option>
+								<option value="36">Meherpur</option>
+								<option value="9">Munshiganj</option>
+								<option value="10">Mymensingh</option>
+								<option value="52">Naogaon</option>
+								<option value="37">Narail</option>
+								<option value="11">Narayanganj</option>
+								<option value="12">Narsingdi</option>
+								<option value="53">Natore</option>
+								<option value="13">Netrakona</option>
+								<option value="62">Nilphamari</option>
+								<option value="27">Noakhali</option>
+								<option value="54">Pabna</option>
+								<option value="63">Panchagarh</option>
+								<option value="47">Patuakhali</option>
+								<option value="48">Pirojgonj</option>
+								<option value="14">Rajbari</option>
+								<option value="55">Rajshahi</option>
+								<option value="28">Rangamati</option>
+								<option value="57">Rangpur</option>
+								<option value="38">Satkhira</option>
+								<option value="15">Shariatpur</option>
+								<option value="16">Sherpur</option>
+								<option value="56">Sirajganj</option>
+								<option value="42">Sunamganj</option>
+								<option value="39">Sylhet</option>
+								<option value="17">Tangail</option>
+								<option value="64">Thakurgaon</option>
+							</select>
+						</div>
+					</div>
+
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3" for="image1">Image</label>
+						<div class="col-sm-9">
+							<input multiple type="file" name="image" id="image1" accept="image/*"/>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3"></label>
+						<div class="col-sm-9">
+							<label class="form-check-label">
+								<input  type="checkbox" name="agree" value="agree" class="form-check-input"/>
+								I agree.
+							</label>
+						</div>
+
+					</div>
+
+
+					<div class="form-group row">
+						<div class="col-sm-3">
+
+						</div>
+						<div class="col-sm-6">
+							<button type="submit" name="submit" class="btn btn-success btn-block"/>Submit</button>
+						</div>
+						<div class="col-sm-3">
+
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+
+
+<!-----Footer Area Start------>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 myCols">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 myCols">
+                    <h5>About Me</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 myCols">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 myCols">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="social-networks">
+            <a href="#" class="facebook"><i class="fa fa-facebook-official"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="google"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="google"><i class="fa fa-github"></i></a>
+            <a href="#" class="google"><i class="fa fa-rss"></i></a>
+        </div>
+		<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"
+		   role="button" title="Click to return on the top page"
+		   data-toggle="tooltip" data-placement="left">
+			<span class="glyphicon glyphicon-chevron-up"><img src="img/top.png" alt=""></span></a>
+        <div class="footer-copyright">
+            <p>© 2017 All Rights Reserved to <a href="">MUSHFIQ</a> </p>
+        </div>
+		
+    </footer>
+<!-----Footer Area End------>
+    <!-- Sign In Area Start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="modal fade " id="myModallogin">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Login Form</h3>
+                                <button class="" data-dismiss="modal">
+                                    &times
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form action="index.html" method="post">
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-sm-3" for="email">User Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-sm-3" for="password">Password</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <button type="submit" name="submit" class="btn btn-success btn-block"/>Submit</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+		<!--All js plugins here-->
+        <script src="asset/js/jquery-3.2.1.min.js"></script>
+        <script src="asset/js/popper.js"></script>
+		<script src="asset/js/bootstrap.min.js"></script>
+		<script src="asset/js/main.min.js"></script>
+    </body>
+</html>
